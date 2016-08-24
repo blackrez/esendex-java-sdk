@@ -17,6 +17,9 @@ public class RecipientDto extends Dto {
     @XStreamAlias("templatefields")
     private TemplateFieldsDto templateFields;
 
+    @XStreamAlias("metadata")
+    private MetaDataDto metaData;
+
     public String getPhonenumber() {
         return phonenumber;
     }
