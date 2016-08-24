@@ -10,10 +10,10 @@ import java.util.List;
 @XStreamAlias("metadata")
 public class MetaDataDto extends Dto {
 
-    @XStreamImplicit(itemFieldName = "metadata")
-    private List<MetaDatumDto> metaData = new ArrayList();
+    @XStreamImplicit(itemFieldName = "metadataitem")
+    private List<MetaDataItemDto> metaData = new ArrayList();
 
-    public void setMetaData(List<MetaDatumDto> metaData) {
+    public void setMetaData(List<MetaDataItemDto> metaData) {
         this.metaData = metaData;
     }
 }
